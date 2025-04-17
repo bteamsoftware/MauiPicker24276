@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+			 xmlns:local="clr-namespace:MauiPicker8845"
+             x:Class="MauiPicker8845.MainPage"
+			 x:DataType="local:ViewModel">
+
+    <VerticalStackLayout Padding="30,0" Spacing="25">
+		<TableView Intent="Form">
+			<TableRoot Title="MAUI Issue 8845">
+				<TableSection Title="Picker Issue">
+					<ViewCell>
+						<Picker Title="Status" SelectedItem="{Binding Path=Status}">
+							<Picker.ItemsSource>
+								<x:Array Type="{x:Type x:String}">
+									<x:String></x:String>
+									<x:String>Active</x:String>
+									<x:String>Inactive</x:String>
+									<x:String>Pending</x:String>
+								</x:Array>
+							</Picker.ItemsSource>
+						</Picker>
+					</ViewCell>
+				</TableSection>
+			</TableRoot>
+		</TableView>
+    </VerticalStackLayout>
+
+</ContentPage>
