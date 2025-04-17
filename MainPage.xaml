@@ -7,7 +7,7 @@
 
     <VerticalStackLayout Padding="30,0" Spacing="25">
 		<TableView Intent="Form">
-			<TableRoot Title="MAUI Issue 8845">
+			<TableRoot Title="MAUI Issue 24276">
 				<TableSection Title="Picker Issue">
 					<ViewCell>
 						<Picker Title="Status" SelectedItem="{Binding Path=Status}">
